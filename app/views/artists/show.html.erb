@@ -1,0 +1,7 @@
+<h1><%= @artist.name %></h1>
+<ul>
+    <li>Artist Age: <%= @artist.age %></li>
+    <li>Artist Bio: <%= @artist.bio %></li>
+</ul>
+<%= button_to("Edit Artist Information", edit_artist_path(@artist), method: :get) %><br>
+<%= button_to("Delete Artist", @artist, method: :delete) %>
